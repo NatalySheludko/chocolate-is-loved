@@ -253,6 +253,17 @@ img {
   padding-right: 34px;
 }
 
+.title-describe-section {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+}
+
 .describe-menu {
   display: flex;
   column-gap: 88px;
@@ -305,7 +316,7 @@ img {
 }
 
 /*************** INGREDIENTS STYLES *****************/
-.ingredients-section .header-second-level {
+.header-ingredients {
   max-width: 411px;
   margin: 0 auto;
   margin-bottom: 28px;
@@ -318,7 +329,7 @@ img {
   color: #111;
 }
 
-.ingredients-section .paragraph-text {
+.paragraph-ingredients-section {
   max-width: 486px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -443,7 +454,7 @@ img {
 }
 
 /*************** HOW IT`S MADE STYLES *****************/
-.maid-section .header-second-level {
+.header-made-section {
   margin-bottom: 50px;
   text-align: center;
   font-size: 24px;
@@ -466,7 +477,7 @@ img {
   background-color: #ffffff;
 }
 
-.maid-section .header-third-level {
+.title-maid-section {
   width: 350px;
   margin-bottom: 28px;
   font-size: 18px;
@@ -497,7 +508,7 @@ img {
   stroke-width: 1px;
 }
 
-.paragraph-text {
+.paragraph-text-made-section {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
@@ -507,7 +518,11 @@ img {
 
 /*************** TEAM STYLES *****************/
 
-.team-section .header-second-level {
+.team-section {
+  margin-bottom: 50px;
+}
+
+.header-team-section {
   margin-bottom: 90px;
   text-align: center;
   font-size: 24px;
@@ -516,10 +531,6 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
-}
-
-.team-section {
-  margin-bottom: 50px;
 }
 
 .team-section-menu {
@@ -548,7 +559,8 @@ img {
   border-radius: 80px;
   background-color: lightgray;
 }
-.team-section .header-third-level {
+
+.title-team-section {
   margin-bottom: 24px;
   font-size: 18px;
   font-weight: 600;
@@ -557,7 +569,7 @@ img {
   color: #111;
 }
 
-.team-section .paragraph-text {
+.text-team-section {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
