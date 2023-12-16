@@ -19,13 +19,15 @@
   <!-- HEADER -->
   <header class="page-top">
     <div class="container nav-container">
-
       <nav class="page-nav">
-        <a class="logo" href="./index.html"><span
-            class="logo-text-simply">Simply</span>&nbsp;Chocolate<!--<i>Simply</i>-->
-          <svg class="nav-icon-chocolate" width="24" height="24" aria-label="chocolate">
+        <a class="logo" href="./index.html"><span class="logo-text-simply">Simply</span>&nbsp;Chocolate
+          <!--<i>Simply</i>-->
+          <svg class="nav-icon-chocolate" aria-label="chocolate">
             <use href="./images/icons.svg#icon-chocolate"></use>
           </svg></a>
+        <svg class="nav-icon-group" width="28" height="28" aria-label="navbar burger menu">
+          <use href="./images/icons.svg#icon-group"></use>
+        </svg>
         <ul class="menu-nav">
           <li class="menu-nav-item">
             <a class="menu-nav-link" href="./index.html">Home</a>
@@ -55,7 +57,7 @@
   <main>
     <!-- FIRST SECTION -->
     <section class="view-section">
-      <div class="container">
+      <div class="container component-container">
         <h1 class="header-first-level">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
@@ -76,7 +78,7 @@
     </section>
 
     <!-- DESCRIBE SECTION -->
-    <section class="describe-section section">
+    <section class="describe-section">
       <div class="container benefits-container">
         <h2 class="visually-hidden title-describe-section">Our benefits</h2>
 
@@ -146,7 +148,20 @@
 
         <ul class="ingredients-box-menu">
           <li class="ingredients-menu-item">
-            <img class="ingredients-list-img" src="./images/milk-chocolate.png" alt="Milk chocolate" />
+
+            <picture>
+              <source srcset="
+                                      ./images/ingredients/desktop/milk-chocolate-desktop.png 1x,
+                                      ./images/ingredients/desktop/milk-chocolate-desktop@2x.png 2x
+                                      " media="(min-width: 1158px)" />
+
+              <source srcset="
+                                      ./images/ingredients/mobile-tablet/milk-chocolate@2x.png 2x
+                                      " media="(max-width: 1157px)" />
+              <img class="ingredients-list-img" src="./images/ingredients/mobile-tablet/milk-chocolate.png"
+                alt="Milk chocolate" />
+            </picture>
+
             <h3 class="ingredients-title">milk chocolate</h3>
             <div class="overlay">
 
@@ -169,7 +184,19 @@
           </li>
 
           <li class="ingredients-menu-item">
-            <img class="ingredients-list-img" src="./images/milk.png" alt="Milk" />
+
+            <picture>
+              <source srcset="
+                                                  ./images/ingredients/desktop/milk-desktop.png 1x,
+                                                  ./images/ingredients/desktop/milk-desktop@2x.png 2x
+                                                  " media="(min-width: 1158px)" />
+
+              <source srcset="
+                                                  ./images/ingredients/mobile-tablet/milk@2x.png 2x
+                                                  " media="(max-width: 1157px)" />
+              <img class="ingredients-list-img" src="./images/ingredients/mobile-tablet/milk.png" alt="Milk" />
+            </picture>
+
             <h3 class="ingredients-title">milk</h3>
             <div class="overlay">
               <h3 class="overlay-heading">milk</h3>
@@ -191,7 +218,19 @@
           </li>
 
           <li class="ingredients-menu-item">
-            <img class="ingredients-list-img" src="./images/nuts.png" alt="Nuts" />
+
+            <picture>
+              <source srcset="
+                                                  ./images/ingredients/desktop/nuts-desktop.png 1x,
+                                                  ./images/ingredients/desktop/nuts-desktop@2x.png 2x
+                                                  " media="(min-width: 1158px)" />
+
+              <source srcset="
+                                                  ./images/ingredients/mobile-tablet/nuts@2x.png 2x
+                                                  " media="(max-width: 1157px)" />
+              <img class="ingredients-list-img" src="./images/ingredients/mobile-tablet/nuts.png" alt="Nuts" />
+            </picture>
+
             <h3 class="ingredients-title">nuts</h3>
             <div class="overlay">
               <h3 class="overlay-heading">nuts</h3>
@@ -213,7 +252,20 @@
           </li>
 
           <li class="ingredients-menu-item">
-            <img class="ingredients-list-img" src="./images/semi-sweet-chocolate.png" alt="Semi - sweet chocolate" />
+
+            <picture>
+              <source srcset="
+                                                              ./images/ingredients/desktop/cocoa-desktop.png 1x,
+                                                              ./images/ingredients/desktop/cocoa-desktop@2x.png 2x
+                                                              " media="(min-width: 1158px)" />
+
+              <source srcset="
+                                                              ./images/ingredients/mobile-tablet/cocoa@2x.png 2x
+                                                              " media="(max-width: 1157px)" />
+              <img class="ingredients-list-img" src="./images/ingredients/mobile-tablet/cocoa.png"
+                alt="Semi - sweet chocolate" />
+            </picture>
+
             <h3 class="ingredients-title">semi - sweet chocolate</h3>
             <div class="overlay">
               <h3 class="overlay-heading">semi - sweet chocolate</h3>
@@ -245,9 +297,32 @@
         </h2>
 
         <div class="made-box">
-          <img src="./images/how-it-is-made.jpg" alt="How made chocolate" />
+          <div class="position-play-icon">
+            <picture>
+              <source srcset="
+                          ./images/made/desktop/made-desktop.jpg 1x,
+                          ./images/made/desktop/made-desktop@2x.jpg 2x
+                          " media="(min-width: 1158px)" />
+
+              <source srcset="
+                          ./images/made/tablet/made-tablet.jpg 1x,
+                          ./images/made/tablet/made-tablet@2x.jpg 2x
+                          " media="(min-width: 768px)" />
+
+              <source srcset="
+                          ./images/made/mobile/made-mobile@2x.jpg 2x
+                          " media="(max-width: 767px)" />
+              <img class="made-photo" src="./images/made/mobile/made-mobile.jpg" alt="How made chocolate" />
+            </picture>
+            <div class="box-icon-play">
+              <svg class="made-section-icon-play" width="14" height="15" aria-label="Play icon">
+                <use href="./images/icons.svg#icon-play"></use>
+              </svg>
+            </div>
+          </div>
+
           <div class="made-menu-box">
-            <h3 class="title-maid-section">
+            <h3 class="title-made-section">
               Try our chocolates today and discover the perfect balance of flavor
             </h3>
 
@@ -326,8 +401,15 @@
         <ul class="team-section-menu">
           <li class="team-menu-item">
             <div class="team-avatar-box">
-              <img class="team-personal-photo" width="80" height="80" src="./images/victoria-dobrzhanska.png"
-                alt="Victoria Dobrzhanska" />
+
+              <picture>
+                <source srcset="
+                          ./images/team/victoria-dobrzhanska@2x.png 2x
+                          " media="(min-width: 320px)" />
+                <img class="team-personal-photo" src="./images/team/victoria-dobrzhanska.png"
+                  alt="Victoria Dobrzhanska" />
+              </picture>
+
             </div>
             <h3 class="title-team-section">Victoria Dobrzhanska</h3>
             <p class="text-team-section">
@@ -338,8 +420,14 @@
 
           <li class="team-menu-item">
             <div class="team-avatar-box">
-              <img class="team-personal-photo" width="80" height="80" src="./images/nazar-babenko.png"
-                alt="Nazar Babenko" />
+
+              <picture>
+                <source srcset="
+                                        ./images/team/nazar-babenko@2x.png 2x
+                                        " media="(min-width: 320px)" />
+                <img class="team-personal-photo" src="./images/team/nazar-babenko.png" alt="Nazar Babenko" />
+              </picture>
+
             </div>
             <h3 class="title-team-section">Nazar Babenko</h3>
             <p class="text-team-section">
@@ -351,8 +439,14 @@
 
           <li class="team-menu-item">
             <div class="team-avatar-box">
-              <img class="team-personal-photo" width="80" height="80" src="./images/olena-kampusch.png"
-                alt="Olena Kampusch" />
+
+              <picture>
+                <source srcset="
+                                        ./images/team/olena-kampusch@2x.png 2x
+                                        " media="(min-width: 320px)" />
+                <img class="team-personal-photo" src="./images/team/olena-kampusch.png" alt="Olena Kampusch" />
+              </picture>
+
             </div>
             <h3 class="title-team-section">Olena Kampusch</h3>
             <p class="text-team-section">
@@ -362,13 +456,35 @@
             </p>
           </li>
         </ul>
-        <button class="review-button" type="button">Leave a review</button>
+
+        <ul class="team-section-icon-menu">
+          <li class="team-section-icon-item">
+            <svg class="team-section-menu-item-icon" width="28" height="13" aria-label="Rectangle icon">
+              <use href="./images/icons.svg#icon-rectangle"></use>
+            </svg>
+
+          </li>
+          <li class="team-section-icon-item">
+            <svg class="team-section-menu-item-icon" width="13" height="13" aria-label="Ellipse icon">
+              <use href="./images/icons.svg#icon-ellipse"></use>
+            </svg>
+
+          </li>
+          <li class="team-section-icon-item">
+            <svg class="team-section-menu-item-icon" width="13" height="13" aria-label="Ellipse icon">
+              <use href="./images/icons.svg#icon-ellipse"></use>
+            </svg>
+
+          </li>
+        </ul>
+
+        <button class="review-button-team" type="button">Leave a review</button>
       </div>
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="page-footer section">
+  <footer class="page-footer">
     <div class="container">
       <div class="footer-paragraph-box">
         <p class="footer-paragraph">
@@ -401,10 +517,17 @@
               <a class="footer-link" href="./index.html#made">How it`s made?</a>
             </li>
             <li class="footer-item">
+              <a class="footer-link" href="./index.html#made">Our products</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./index.html#made">Top sellers</a>
+            </li>
+            <li class="footer-item">
               <a class="footer-link" href="./index.html#loved">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
+
         <form class="footer-btn-form" name="subscribe_form" autocomplete="off">
           <label class="footer-input-label" for="email">
             <input class="input-data" id="email" name="email" type="email" title="email@gmail.com"
@@ -418,10 +541,9 @@
   </footer>
 
   <!-- BACKDROP -->
-  <div class="backdrop "><!--is-open-->
+  <div class="backdrop"><!-- is-open-->
     <div class="modal-window">
-      <button class="modal-close-btn" type="button"><svg class="modal-close-btn-icon" width="28" height="28"
-          aria-label="closing-cross">
+      <button class="modal-close-btn" type="button"><svg class="modal-close-btn-icon" aria-label="closing cross">
           <use href="./images/icons.svg#icon-x-close"></use>
         </svg></button>
       <p class="review-form-description">leave a review about <span class="highlighter-text">our chocolate</span></p>
@@ -432,7 +554,7 @@
           <div class="form-field-input-box">
             <input class="form-field-input" id="user-name" name="user-name" type="text" title="Nataliia"
               pattern="[a-zA-Zа-яА-ЯіІїЇґҐ']+" required>
-            <svg class="form-field-input-icon" width="24" height="24" aria-label="person">
+            <svg class="form-field-input-icon" aria-label="person">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
           </div>
@@ -443,7 +565,7 @@
           <div class="form-field-input-box">
             <input class="form-field-input" id="user-email" name="user-email" type="email" title="email@gmail.com"
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-            <svg class="form-field-input-icon" width="24" height="24" aria-label="email">
+            <svg class="form-field-input-icon" aria-label="email">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
           </div>
@@ -454,7 +576,7 @@
           <div class="form-field-input-box">
             <input class="form-field-input" id="user-tel" name="user-tel" type="tel" title="xxx-xxx-xx-xx"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-            <svg class="form-field-input-icon" width="24" height="24" aria-label="phone">
+            <svg class="form-field-input-icon" aria-label="phone">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
@@ -473,15 +595,42 @@
                 aria-label="checkmark">
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </svg>
-            </span>I accept the terms and conditions of the
-            <a class="privacy-policy-link" href="">Privacy
-              Policy</a>
+            </span>
+            <span class="privacy-policy-text">I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy
+                Policy</a></span>
           </label>
         </div>
 
         <button class="modal-bottom-btn" type="submit">Send</button>
       </form>
     </div>
+  </div>
+
+  <!-- BURGER NAVBAR -->
+  <div class="burger-navbar-container"><!-- is-open-->
+    <button class="burger-menu-close-btn" type="button"><svg class="menu-close-btn-icon" width="28" height="28"
+        aria-label="closing cross">
+        <use href="./images/icons.svg#icon-x-close"></use>
+      </svg></button>
+    <nav class="burger-window-navigation">
+      <ul class="navigation-menu">
+        <li class="nav-burger-menu-list"><a class="nav-menu-list-link" href="./index.html">Home</a></li>
+        <li class="nav-burger-menu-list"><a class="nav-menu-list-link" href="./index.html#made">How it`s made?</a></li>
+        <li class="nav-burger-menu-list"><a class="nav-menu-list-link" href="./index.html#loved">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="burger-social-menu">
+      <li class="burger-social-menu-list"><a class="burger-social-menu-list-link" href=""><svg class="" width="22"
+            height="22" aria-label="instagram">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg></a></li>
+      <li class="burger-social-menu-list"><a class="burger-social-menu-list-link" href=""><svg class="" width="20"
+            height="20" aria-label="twitter">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg></a></li>
+    </ul>
   </div>
 </body>
 

@@ -56,5 +56,19 @@
         <symbol id="icon-checkmark" viewBox="0 0 32 32">
             <path d="M27 4 12 19l-7-7-5 5 12 12L32 9z" />
         </symbol>
+        <symbol id="icon-group" viewBox="0 0 36 32">
+    <path
+        fill="#111" d="M1.199 4.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4zM1.199 16.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4zM1.199 28.002a2.4 2.4 0 0 1 2.4-2.4h28.8a2.4 2.4 0 1 1 0 4.8h-28.8a2.4 2.4 0 0 1-2.4-2.4z"
+    />
+</symbol>
+<symbol id="icon-ellipse" viewBox="0 0 34 32">
+            <path fill="rgba(17, 17, 17, 0.10)" d="M17.231 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
+        </symbol>
+        <symbol id="icon-rectangle" viewBox="0 0 71 32">
+            <path fill="#FD9222" d="M54.154 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 30 32">
+            <path fill="#F5F4F4" d="M0 32v-32l29.867 16-29.867 16z"></path>
+        </symbol>
   </defs>
 </svg>
