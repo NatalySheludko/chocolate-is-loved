@@ -74,13 +74,13 @@ img {
     top: 0;
     right: 0;
     z-index: 9999;
-    transform: translateX(0%);
+    transform: translateX(100%);
     background-color: #1e1823;
     transition: transform 250ms linear;
   }
 
-  .burger-navbar-container.is-open {
-    transform: translateX(100%);
+  .is-open-nav {
+    transform: translateX(0%);
   }
 
   .burger-menu-close-btn {
@@ -1382,16 +1382,16 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   border-radius: 15px;
-  background: #fafafa;
+  background-color: #fafafa;
   transition: transform 250ms linear;
 }
 
 .modal-close-btn {
   position: absolute;
-  padding: 0; /*прибираємо внутр.відступи для іконки*/
+  padding: 0;
   top: 14px;
   right: 14px;
-  line-height: 0; /*у кнопок скидуємо бо при фокусі займає більшу висоту ніж потрібно і outline виділяється пропорційно*/
+  line-height: 0;
   stroke: #111;
   border: none;
   background-color: transparent;
@@ -1431,7 +1431,7 @@ img {
 }
 
 .form-field-input {
-  width: 100%; /*щоб перенести label над input(буде по всій ширині і витіснить label) */
+  width: 100%;
   height: 45px;
   padding-left: 43px;
   border-radius: 8px;
@@ -1477,7 +1477,7 @@ img {
 }
 
 .form-field-textarea::placeholder {
-  color: rgba(64, 64, 64, 0.3); /*placeholder наслідує усе окрім кольору*/
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .privacy-checkbox {
