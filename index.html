@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>SIMPLY CHOCOLATE</title>
   </head>
 
@@ -27,7 +31,6 @@
         <nav class="page-nav">
           <a class="logo" href="./index.html"
             ><span class="logo-text-simply">Simply</span>&nbsp;Chocolate
-            <!--<i>Simply</i>-->
             <svg class="nav-icon-chocolate" aria-label="chocolate">
               <use href="./images/icons.svg#icon-chocolate"></use>
             </svg>
@@ -59,7 +62,7 @@
 
         <ul class="header-media-menu">
           <li class="header-media-item">
-            <a class="header-media-link" href=""
+            <a class="header-media-link" href="#"
               ><svg
                 class="nav-icon-media"
                 width="24"
@@ -71,7 +74,7 @@
             </a>
           </li>
           <li class="header-media-item">
-            <a class="header-media-link" href=""
+            <a class="header-media-link" href="#"
               ><svg
                 class="nav-icon-media"
                 width="24"
@@ -96,7 +99,7 @@
           </h1>
 
           <div class="view-btn">
-            <button class="buy-button" type="button">Buy now</button>
+            <a class="buy-button" href="#contacts-for-buy">Buy now</a>
             <a class="recipe-link" href="./index.html#made">How it`s made</a>
             <a class="scroll-down-link" href="./index.html#scroll"
               >scroll down
@@ -384,46 +387,10 @@
           </h2>
 
           <div class="made-box">
-            <div class="position-play-icon">
-              <picture>
-                <source
-                  srcset="
-                    ./images/made/desktop/made-desktop.jpg    1x,
-                    ./images/made/desktop/made-desktop@2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/made/tablet/made-tablet.jpg    1x,
-                    ./images/made/tablet/made-tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <source
-                  srcset="./images/made/mobile/made-mobile@2x.jpg 2x"
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="made-photo"
-                  src="./images/made/mobile/made-mobile.jpg"
-                  alt="How made chocolate"
-                />
-              </picture>
-              <div class="box-icon-play">
-                <svg
-                  class="made-section-icon-play"
-                  width="14"
-                  height="15"
-                  aria-label="Play icon"
-                >
-                  <use href="./images/icons.svg#icon-play"></use>
-                </svg>
-              </div>
+            <div class="position-video">
+							<video class="video" src="./images/chocolate.mp4" controls></video>
             </div>
-
+						
             <div class="made-menu-box">
               <h3 class="title-made-section">
                 Try our chocolates today and discover the perfect balance of
@@ -527,107 +494,73 @@
           <h2 class="header-team-section" id="loved">
             <span class="highlighter-text">chocolate</span> is loved
           </h2>
-
-          <ul class="team-section-menu">
-            <li class="team-menu-item">
-              <div class="team-avatar-box">
-                <picture>
-                  <source
-                    srcset="./images/team/victoria-dobrzhanska@2x.png 2x"
-                    media="(min-width: 320px)"
-                  />
-                  <img
-                    class="team-personal-photo"
-                    src="./images/team/victoria-dobrzhanska.png"
-                    alt="Victoria Dobrzhanska"
-                  />
-                </picture>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="team-avatar-box">
+                  <picture>
+                    <source
+                      srcset="./images/team/victoria-dobrzhanska@2x.png 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team-personal-photo"
+                      src="./images/team/victoria-dobrzhanska.png"
+                      alt="Victoria Dobrzhanska"
+                    />
+                  </picture>
+                </div>
+                <h3 class="title-team-section">Victoria Dobrzhanska</h3>
+                <p class="text-team-section">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
               </div>
-              <h3 class="title-team-section">Victoria Dobrzhanska</h3>
-              <p class="text-team-section">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </li>
-
-            <li class="team-menu-item">
-              <div class="team-avatar-box">
-                <picture>
-                  <source
-                    srcset="./images/team/nazar-babenko@2x.png 2x"
-                    media="(min-width: 320px)"
-                  />
-                  <img
-                    class="team-personal-photo"
-                    src="./images/team/nazar-babenko.png"
-                    alt="Nazar Babenko"
-                  />
-                </picture>
+              <div class="swiper-slide">
+                <div class="team-avatar-box">
+                  <picture>
+                    <source
+                      srcset="./images/team/nazar-babenko@2x.png 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team-personal-photo"
+                      src="./images/team/nazar-babenko.png"
+                      alt="Nazar Babenko"
+                    />
+                  </picture>
+                </div>
+                <h3 class="title-team-section">Nazar Babenko</h3>
+                <p class="text-team-section">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
               </div>
-              <h3 class="title-team-section">Nazar Babenko</h3>
-              <p class="text-team-section">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </li>
-
-            <li class="team-menu-item">
-              <div class="team-avatar-box">
-                <picture>
-                  <source
-                    srcset="./images/team/olena-kampusch@2x.png 2x"
-                    media="(min-width: 320px)"
-                  />
-                  <img
-                    class="team-personal-photo"
-                    src="./images/team/olena-kampusch.png"
-                    alt="Olena Kampusch"
-                  />
-                </picture>
+              <div class="swiper-slide">
+                <div class="team-avatar-box">
+                  <picture>
+                    <source
+                      srcset="./images/team/olena-kampusch@2x.png 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team-personal-photo"
+                      src="./images/team/olena-kampusch.png"
+                      alt="Olena Kampusch"
+                    />
+                  </picture>
+                </div>
+                <h3 class="title-team-section">Olena Kampusch</h3>
+                <p class="text-team-section">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
               </div>
-              <h3 class="title-team-section">Olena Kampusch</h3>
-              <p class="text-team-section">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </li>
-          </ul>
-
-          <ul class="team-section-icon-menu">
-            <li class="team-section-icon-item">
-              <svg
-                class="team-section-menu-item-icon"
-                width="28"
-                height="13"
-                aria-label="Rectangle icon"
-              >
-                <use href="./images/icons.svg#icon-rectangle"></use>
-              </svg>
-            </li>
-            <li class="team-section-icon-item">
-              <svg
-                class="team-section-menu-item-icon"
-                width="13"
-                height="13"
-                aria-label="Ellipse icon"
-              >
-                <use href="./images/icons.svg#icon-ellipse"></use>
-              </svg>
-            </li>
-            <li class="team-section-icon-item">
-              <svg
-                class="team-section-menu-item-icon"
-                width="13"
-                height="13"
-                aria-label="Ellipse icon"
-              >
-                <use href="./images/icons.svg#icon-ellipse"></use>
-              </svg>
-            </li>
-          </ul>
-
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
           <button class="review-button-team" type="button">
             Leave a review
           </button>
@@ -645,7 +578,7 @@
           </p>
 
           <div class="footer-address-box">
-            <h2 class="footer-header">Contact us</h2>
+            <h2 class="footer-header" id="contacts-for-buy">Contact us</h2>
             <address class="bottom-page-address">
               <ul class="address-menu">
                 <li class="address-item">
@@ -713,7 +646,7 @@
     </footer>
 
     <!-- BACKDROP -->
-    <div class="backdrop"><!-- is-open -->
+    <div class="backdrop">
       <div class="modal-window">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-btn-icon" aria-label="closing cross">
@@ -725,7 +658,7 @@
           <span class="highlighter-text">our chocolate</span>
         </p>
 
-        <form>
+        <form class="form">
           <div class="form-fields">
             <label class="form-field-label" for="user-name">Name</label>
             <div class="form-field-input-box">
@@ -736,6 +669,7 @@
                 type="text"
                 title="Nataliia"
                 pattern="[a-zA-Zа-яА-ЯіІїЇґҐ']+"
+                autocomplete="off"
                 required
               />
               <svg class="form-field-input-icon" aria-label="person">
@@ -752,6 +686,7 @@
                 id="user-email"
                 name="user-email"
                 type="email"
+                autocomplete="off"
                 title="email@gmail.com"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                 required
@@ -770,6 +705,7 @@
                 id="user-tel"
                 name="user-tel"
                 type="tel"
+                autocomplete="off"
                 title="xxx-xxx-xx-xx"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 required
@@ -799,6 +735,7 @@
               name="user-privacy"
               type="checkbox"
               value="true"
+              required
             />
             <label class="privacy-checkbox-label" for="user-privacy">
               <span class="user-privacy-component-icon"
@@ -824,7 +761,7 @@
     </div>
 
     <!-- BURGER NAVBAR -->
-    <div class="burger-navbar-container"><!-- is-open-nav-->
+    <div class="burger-navbar-container">
       <button class="burger-menu-close-btn" type="button">
         <svg
           class="menu-close-btn-icon"
@@ -855,19 +792,31 @@
       <ul class="burger-social-menu">
         <li class="burger-social-menu-list">
           <a class="burger-social-menu-list-link" href="">
-            <svg class="" width="22" height="22" aria-label="instagram">
+            <svg
+              class="navbar-social-link-icons"
+              width="22"
+              height="22"
+              aria-label="instagram"
+            >
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="burger-social-menu-list">
           <a class="burger-social-menu-list-link" href="">
-            <svg class="" width="20" height="20" aria-label="twitter">
+            <svg
+              class="navbar-social-link-icons"
+              width="20"
+              height="20"
+              aria-label="twitter"
+            >
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
