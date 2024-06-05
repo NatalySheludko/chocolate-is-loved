@@ -66,7 +66,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  /*burger-menu*/
   .burger-navbar-container {
     position: fixed;
     width: 220px;
@@ -95,8 +94,13 @@ img {
 
   .menu-close-btn-icon {
     stroke: #fff;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .menu-close-btn-icon:hover,
+  .menu-close-btn-icon:focus {
+    stroke: #fd9222;
+  }
   .burger-window-navigation {
     padding: 168px 48px;
   }
@@ -107,6 +111,12 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-menu-list-link:hover,
+  .nav-menu-list-link:focus {
+    color: #fd9222;
   }
 
   .nav-burger-menu-list:first-child .nav-menu-list-link {
@@ -128,6 +138,12 @@ img {
   .burger-social-menu-list-link {
     stroke: #fff;
     fill: transparent;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .burger-social-menu-list-link:hover,
+  .burger-social-menu-list-link:focus {
+    stroke: #fd9222;
   }
 }
 
@@ -192,6 +208,16 @@ img {
   stroke: #fd9222;
 }
 
+.nav-icon-group {
+  cursor: pointer;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-icon-group:hover,
+.nav-icon-group:focus {
+  stroke: #fd9222;
+}
+
 .menu-nav {
   display: none;
 }
@@ -237,6 +263,12 @@ img {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #111;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-nav-link:hover,
+  .menu-nav-link:focus {
+    color: #fd9222;
   }
 
   .header-media-menu {
@@ -251,6 +283,12 @@ img {
     line-height: 0;
     fill: none;
     stroke: #111;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-media-link:hover,
+  .header-media-link:focus {
+    stroke: #fd9222;
   }
 }
 
@@ -269,24 +307,6 @@ img {
   .nav-icon-chocolate {
     width: 24px;
     height: 24px;
-  }
-
-  .menu-nav-link {
-    transition: color 250ms linear;
-  }
-
-  .menu-nav-link:hover,
-  .menu-nav-link:focus {
-    color: #fd9222;
-  }
-
-  .header-media-link {
-    transition: fill 250ms linear;
-  }
-
-  .header-media-link:focus,
-  .header-media-link:hover {
-    stroke: #fd9222;
   }
 }
 
@@ -337,6 +357,9 @@ img {
 }
 
 .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 120px;
   height: 41px;
   margin-right: 14px;
@@ -346,6 +369,13 @@ img {
   border-radius: 100px;
   background-color: #fd9222;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-button:hover,
+.buy-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 .recipe-link {
@@ -360,6 +390,16 @@ img {
   border-radius: 100px;
   color: #fff;
   border: 1px solid #fff;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recipe-link:hover,
+.recipe-link:focus {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+  color: #fd9222;
 }
 
 .scroll-down-link {
@@ -371,6 +411,12 @@ img {
   line-height: 1.17;
   letter-spacing: -0.03em;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-down-link:hover,
+.scroll-down-link:focus {
+  color: #fd9222;
 }
 
 .scroll-down-icon-wrapper {
@@ -382,6 +428,21 @@ img {
   border-radius: 50%;
   background-color: #fff;
   fill: #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-down-link:hover .scroll-down-icon-wrapper,
+.scroll-down-link:focus .scroll-down-icon-wrapper,
+.scroll-down-icon-wrapper:hover,
+.scroll-down-icon-wrapper:focus,
+.scroll-down-icon-wrapper:hover + .scroll-down-link,
+.scroll-down-icon-wrapper:focus + .scroll-down-link {
+  background-color: #fd9222;
+  fill: #fff;
+  stroke: #fff;
+  color: #fd9222;
 }
 
 /*************** TABLET FIRST SECTION STYLES *****************/
@@ -847,31 +908,11 @@ img {
   row-gap: 20px;
 }
 
-.position-play-icon {
-  position: relative;
-}
-
-.made-photo {
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+.video {
+  display: block;
+  margin: 0 auto;
+  max-width: 330px;
   border-radius: 15px;
-}
-
-.box-icon-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 1px solid #f5f4f4;
-}
-
-.made-section-icon-play {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%);
 }
 
 .made-menu-box {
@@ -931,11 +972,6 @@ img {
     align-items: center;
   }
 
-  .box-icon-play,
-  .made-section-icon-play {
-    display: none;
-  }
-
   .made-menu-box {
     max-width: 614px;
     padding: 32px 32px;
@@ -944,6 +980,10 @@ img {
   .title-made-section {
     max-width: 350px;
     margin-bottom: 28px;
+  }
+
+  .video {
+    max-width: 615px;
   }
 }
 
@@ -971,6 +1011,14 @@ img {
   .made-item:not(:last-child) {
     margin-bottom: 24px;
   }
+
+  .position-video {
+    margin: auto 0;
+  }
+	
+  .video {
+    max-width: 615px;
+  }
 }
 
 /*************** MOBILE TEAM STYLES *****************/
@@ -989,7 +1037,12 @@ img {
   color: #111;
 }
 
-.team-menu-item {
+.swiper {
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
   position: relative;
   padding: 56px 18px 42px 18px;
   margin-bottom: 20px;
@@ -999,15 +1052,11 @@ img {
   box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
 }
 
-.team-menu-item:not(:first-child) {
-  display: none;
-}
-
 .team-avatar-box {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
@@ -1017,6 +1066,7 @@ img {
 }
 
 .title-team-section {
+  margin-top: 40px;
   margin-bottom: 24px;
   font-size: 18px;
   font-weight: 600;
@@ -1034,11 +1084,10 @@ img {
   color: rgba(17, 17, 17, 0.7);
 }
 
-.team-section-icon-menu {
-  display: flex;
-  column-gap: 13px;
-  justify-content: center;
-  margin-bottom: 32px;
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #fd9222 !important;
 }
 
 .review-button-team {
@@ -1052,6 +1101,16 @@ img {
   border-radius: 100px;
   border: 1px solid #fd9222;
   color: #111;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-button-team:hover,
+.review-button-team:focus {
+  background-color: #fd9222;
+  border: 1px solid #fd9222;
+  color: #fff;
 }
 
 /*************** TABLET TEAM STYLES *****************/
@@ -1066,32 +1125,9 @@ img {
     line-height: 1.17;
   }
 
-  .team-section-menu {
-    display: flex;
-    justify-content: center;
-    column-gap: 16px;
-  }
-
-  .team-menu-item {
-    width: calc((100% - 2 * 16px) / 2);
-    padding: 56px 16px 42px 16px;
-    margin-bottom: 32px;
-  }
-
-  .team-menu-item:not(:first-child) {
-    display: unset;
-  }
-
-  .team-menu-item:last-child {
-    display: none;
-  }
-
   .text-team-section {
+    margin: 0 auto;
     width: 312px;
-  }
-
-  .team-section-icon-menu {
-    margin-bottom: 50px;
   }
 
   .review-button-team {
@@ -1105,40 +1141,6 @@ img {
 @media screen and (min-width: 1168px) {
   .team-section {
     margin-bottom: 50px;
-  }
-
-  .team-section-menu {
-    justify-content: unset;
-    column-gap: 28px;
-    margin-bottom: 50px;
-  }
-
-  .team-menu-item {
-    width: calc((100% - 56px) / 3);
-    padding: 66px 24px 24px 24px;
-    margin-bottom: 0;
-  }
-
-  .team-menu-item:last-child {
-    display: unset;
-  }
-
-  .text-team-section {
-    width: 312px;
-  }
-
-  .team-section-icon-menu {
-    display: none;
-  }
-
-  .review-button-team {
-    transition: background-color 250ms linear, color 250ms linear;
-  }
-
-  .review-button-team:hover,
-  .review-button-team:focus {
-    background-color: #fd9222;
-    color: #fff;
   }
 }
 
@@ -1203,6 +1205,12 @@ img {
   letter-spacing: -0.02em;
   font-style: normal;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #fd9222;
 }
 
 .footer-nav-menu {
@@ -1219,6 +1227,12 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #fd9222;
 }
 
 .footer-btn-form {
@@ -1236,6 +1250,10 @@ img {
   border-radius: 30px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
+  color: #fff;
+}
+
+.input-data::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1248,6 +1266,14 @@ img {
   border: none;
   background-color: #fd9222;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 /*************** TABLET FOOTER STYLES *****************/
@@ -1395,6 +1421,12 @@ img {
   stroke: #111;
   border: none;
   background-color: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  stroke: #fd9222;
 }
 
 .modal-close-btn-icon {
@@ -1473,7 +1505,12 @@ img {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
   background-color: transparent;
-  color: rgba(64, 64, 64, 0.3);
+  color: #111;
+  transition: border 250ms linear;
+}
+
+.form-field-textarea:focus {
+  border: 1.5px solid #111;
 }
 
 .form-field-textarea::placeholder {
@@ -1546,6 +1583,16 @@ input[type="checkbox"]:focus
   background: #fd9222;
   color: #fff;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-bottom-btn:hover,
+.modal-bottom-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+  border: 1px solid #fd9222;
 }
 
 /*************** TABLET BACKDROP STYLES *****************/
