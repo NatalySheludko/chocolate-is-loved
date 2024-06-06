@@ -911,11 +911,14 @@ img {
 .video {
   display: block;
   margin: 0 auto;
-  max-width: 330px;
+  width: 307px;
+  margin-bottom: 20px;
   border-radius: 15px;
 }
 
 .made-menu-box {
+  display: flex;
+  flex-direction: column;
   padding: 20px 14px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -983,7 +986,8 @@ img {
   }
 
   .video {
-    max-width: 615px;
+    width: 560px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1004,20 +1008,19 @@ img {
   }
 
   .made-menu-box {
-    max-width: 516px;
+    flex-direction: row;
+    column-gap: 30px;
+    max-width: 1156px;
     padding: 32px 32px;
+  }
+
+  .video {
+    width: 615px;
+    margin: auto 0;
   }
 
   .made-item:not(:last-child) {
     margin-bottom: 24px;
-  }
-
-  .position-video {
-    margin: auto 0;
-  }
-	
-  .video {
-    max-width: 615px;
   }
 }
 
@@ -1056,7 +1059,7 @@ img {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
@@ -1066,7 +1069,7 @@ img {
 }
 
 .title-team-section {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 24px;
   font-size: 18px;
   font-weight: 600;
@@ -1130,6 +1133,13 @@ img {
     width: 312px;
   }
 
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+  }
+
   .review-button-team {
     width: 222px;
     height: 50px;
@@ -1155,7 +1165,6 @@ img {
   flex-direction: column;
   position: relative;
   row-gap: 32px;
-  /*border-bottom: 1px solid rgba(255, 255, 255, 0.1); - замість ::after*/
 }
 
 .footer-paragraph-box:after {
