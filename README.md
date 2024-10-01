@@ -11,6 +11,7 @@ including HTML, CSS, JavaScript and adaptive design principles to ensure a seaml
 - Identified and resolved technical issues, conducting research to find optimal solutions and improve the overall website quality.
 
 Key Features:
+- Adaptive design for mobile (320px), tablet (768px), desktop (1440px).
 - User-Friendly Interface: Designed to provide an intuitive and enjoyable shopping experience, with clear navigation and attractive visuals.
 - Adaptive Design: Ensured the website is fully responsive on desktops, tablets, and mobile devices.
 - Modal Windows: Implemented modal windows using JavaScript for features.
